@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "oxlint",
-    "preview": "vite preview"
+    "lint": "oxlint src",
+    "preview": "vite preview",
+    "data": "node scripts/generate-data.js"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",
