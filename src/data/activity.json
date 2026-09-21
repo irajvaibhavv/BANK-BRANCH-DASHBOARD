@@ -1,0 +1,51 @@
+[
+ {
+  "id": "A1",
+  "type": "info",
+  "text": "New DSA onboarded: Gupta Finance, Lucknow",
+  "time": "2026-09-18T04:00:00.000Z",
+  "branchId": "BR005"
+ },
+ {
+  "id": "A2",
+  "type": "success",
+  "text": "Loan #LF-4521 disbursed: ₹25 L, Patna Main",
+  "time": "2026-09-18T03:00:00.000Z",
+  "branchId": "BR001"
+ },
+ {
+  "id": "A3",
+  "type": "success",
+  "text": "Monthly target achieved: Chennai branch at 104%",
+  "time": "2026-09-18T01:00:00.000Z",
+  "branchId": "BR021"
+ },
+ {
+  "id": "A4",
+  "type": "warning",
+  "text": "12 files moved to Under Review at Bengaluru",
+  "time": "2026-09-18T00:00:00.000Z",
+  "branchId": "BR024"
+ },
+ {
+  "id": "A5",
+  "type": "info",
+  "text": "Officer Rajesh Kumar completed 8 DSA visits today",
+  "time": "2026-09-17T23:00:00.000Z",
+  "branchId": "BR005"
+ },
+ {
+  "id": "A6",
+  "type": "success",
+  "text": "Loan #LF-4498 approved: ₹1.2 Cr MSME, Ahmedabad",
+  "time": "2026-09-17T21:00:00.000Z",
+  "branchId": "BR035"
+ },
+ {
+  "id": "A7",
+  "type": "danger",
+  "text": "Loan #LF-4470 rejected: incomplete KYC, Jodhpur",
+  "time": "2026-09-17T18:00:00.000Z",
+  "branchId": "BR018"
+ }
+]

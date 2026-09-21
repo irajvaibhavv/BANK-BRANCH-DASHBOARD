@@ -1,0 +1,43 @@
+[
+ {
+  "id": "U1",
+  "phone": "9999000001",
+  "name": "Arvind Mehta",
+  "role": "national",
+  "roleLabel": "National Business Head",
+  "jurisdiction": {}
+ },
+ {
+  "id": "U2",
+  "phone": "9999000002",
+  "name": "Vikram Malhotra",
+  "role": "regional",
+  "roleLabel": "Regional Head · North",
+  "jurisdiction": {
+   "regionId": "north"
+  }
+ },
+ {
+  "id": "U3",
+  "phone": "9999000003",
+  "name": "Rakesh Pandey",
+  "role": "state",
+  "roleLabel": "State Head · Bihar",
+  "jurisdiction": {
+   "regionId": "north",
+   "stateId": "BR"
+  }
+ },
+ {
+  "id": "U4",
+  "phone": "9999000004",
+  "name": "Nandini Singh",
+  "role": "branch",
+  "roleLabel": "Branch Head · Patna Main",
+  "jurisdiction": {
+   "regionId": "north",
+   "stateId": "BR",
+   "branchId": "BR001"
+  }
+ }
+]

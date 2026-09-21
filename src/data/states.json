@@ -1,0 +1,135 @@
+[
+ {
+  "id": "DL",
+  "name": "Delhi NCR",
+  "mapName": "Delhi",
+  "regionId": "north",
+  "head": "Aarti Khanna"
+ },
+ {
+  "id": "UP",
+  "name": "Uttar Pradesh",
+  "mapName": "Uttar Pradesh",
+  "regionId": "north",
+  "head": "Sanjay Dubey"
+ },
+ {
+  "id": "BR",
+  "name": "Bihar",
+  "mapName": "Bihar",
+  "regionId": "north",
+  "head": "Rakesh Pandey"
+ },
+ {
+  "id": "JH",
+  "name": "Jharkhand",
+  "mapName": "Jharkhand",
+  "regionId": "north",
+  "head": "Anita Das"
+ },
+ {
+  "id": "MP",
+  "name": "Madhya Pradesh",
+  "mapName": "Madhya Pradesh",
+  "regionId": "north",
+  "head": "Manoj Tiwari"
+ },
+ {
+  "id": "RJ",
+  "name": "Rajasthan",
+  "mapName": "Rajasthan",
+  "regionId": "north",
+  "head": "Ritu Agarwal"
+ },
+ {
+  "id": "UK",
+  "name": "Uttarakhand",
+  "mapName": "Uttarakhand",
+  "regionId": "north",
+  "head": "Deepak Rawat"
+ },
+ {
+  "id": "PB",
+  "name": "Punjab",
+  "mapName": "Punjab",
+  "regionId": "north",
+  "head": "Harpreet Kaur"
+ },
+ {
+  "id": "TN",
+  "name": "Tamil Nadu",
+  "mapName": "Tamil Nadu",
+  "regionId": "south",
+  "head": "Karthik Subramanian"
+ },
+ {
+  "id": "KA",
+  "name": "Karnataka",
+  "mapName": "Karnataka",
+  "regionId": "south",
+  "head": "Deepika Rao"
+ },
+ {
+  "id": "KL",
+  "name": "Kerala",
+  "mapName": "Kerala",
+  "regionId": "south",
+  "head": "Arun Nair"
+ },
+ {
+  "id": "AP",
+  "name": "Andhra Pradesh",
+  "mapName": "Andhra Pradesh",
+  "regionId": "south",
+  "head": "Pooja Reddy"
+ },
+ {
+  "id": "TS",
+  "name": "Telangana",
+  "mapName": "Telangana",
+  "regionId": "south",
+  "head": "Srinivas Rao"
+ },
+ {
+  "id": "MH",
+  "name": "Maharashtra",
+  "mapName": "Maharashtra",
+  "regionId": "west",
+  "head": "Amit Patel"
+ },
+ {
+  "id": "GJ",
+  "name": "Gujarat",
+  "mapName": "Gujarat",
+  "regionId": "west",
+  "head": "Hetal Shah"
+ },
+ {
+  "id": "GA",
+  "name": "Goa",
+  "mapName": "Goa",
+  "regionId": "west",
+  "head": "Neha Joshi"
+ },
+ {
+  "id": "WB",
+  "name": "West Bengal",
+  "mapName": "West Bengal",
+  "regionId": "east",
+  "head": "Priya Sharma"
+ },
+ {
+  "id": "OD",
+  "name": "Odisha",
+  "mapName": "Odisha",
+  "regionId": "east",
+  "head": "Suresh Yadav"
+ },
+ {
+  "id": "AS",
+  "name": "Assam",
+  "mapName": "Assam",
+  "regionId": "east",
+  "head": "Kavita Mishra"
+ }
+]

@@ -1,0 +1,34 @@
+[
+ {
+  "slab": "Platinum",
+  "minPct": 110,
+  "rate": 0.8,
+  "color": "#6C5CE7",
+  "bonus": 25000,
+  "description": "≥110% of target"
+ },
+ {
+  "slab": "Gold",
+  "minPct": 90,
+  "rate": 0.6,
+  "color": "#F5B301",
+  "bonus": 12000,
+  "description": "90 – 110% of target"
+ },
+ {
+  "slab": "Silver",
+  "minPct": 70,
+  "rate": 0.4,
+  "color": "#9896AB",
+  "bonus": 5000,
+  "description": "70 – 90% of target"
+ },
+ {
+  "slab": "Bronze",
+  "minPct": 0,
+  "rate": 0.25,
+  "color": "#CD7F32",
+  "bonus": 0,
+  "description": "Below 70% of target"
+ }
+]

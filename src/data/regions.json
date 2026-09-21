@@ -1,0 +1,49 @@
+[
+ {
+  "id": "north",
+  "name": "North Region",
+  "head": "Vikram Malhotra",
+  "stateIds": [
+   "DL",
+   "UP",
+   "BR",
+   "JH",
+   "MP",
+   "RJ",
+   "UK",
+   "PB"
+  ]
+ },
+ {
+  "id": "south",
+  "name": "South Region",
+  "head": "Lakshmi Narayanan",
+  "stateIds": [
+   "TN",
+   "KA",
+   "KL",
+   "AP",
+   "TS"
+  ]
+ },
+ {
+  "id": "west",
+  "name": "West Region",
+  "head": "Rohan Deshmukh",
+  "stateIds": [
+   "MH",
+   "GJ",
+   "GA"
+  ]
+ },
+ {
+  "id": "east",
+  "name": "East Region",
+  "head": "Sourav Banerjee",
+  "stateIds": [
+   "WB",
+   "OD",
+   "AS"
+  ]
+ }
+]
