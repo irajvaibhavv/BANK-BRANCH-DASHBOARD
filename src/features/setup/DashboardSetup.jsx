@@ -96,7 +96,7 @@ export default function DashboardSetup() {
                   {widgets.length > 0 && (
                     <div className="setup-grid" style={{ marginBottom: 10 }}>
                       {widgets.map((w) => (
-                        <div key={w.id} className={`setup-card ${on(w.id) ? 'on' : ''}`} onClick={() => toggle(w.id)} role="button" tabIndex={0}>
+                        <div key={w.id} className={`setup-card ${on(w.id) ? 'on' : ''}`} onClick={() => setBuilder({ initial: w })} role="button" tabIndex={0} title="Click to edit this view">
                           <span className="setup-card-ic">{DATASET_BY_ID[w.dataset]?.icon || '▦'}</span>
                           <span className="setup-card-body">
                             <span className="setup-card-title">{w.title}<span className="setup-card-w">{w.width === 'full' ? 'full width' : 'half width'}</span></span>
@@ -106,7 +106,7 @@ export default function DashboardSetup() {
                               <button className="link" style={{ fontSize: 11, display: 'inline-flex', alignItems: 'center', gap: 3, color: 'var(--danger)' }} onClick={(e) => { e.stopPropagation(); removeWidget(w.id); }}><FiTrash2 size={11} /> Remove</button>
                             </span>
                           </span>
-                          <span className="setup-check">{on(w.id) && <FiCheck size={13} />}</span>
+                          <span className="setup-check" role="checkbox" aria-checked={on(w.id)} title={on(w.id) ? 'Shown on my overview — click to hide' : 'Hidden — click to show'} onClick={(e) => { e.stopPropagation(); toggle(w.id); }} style={{ cursor: 'pointer' }}>{on(w.id) && <FiCheck size={13} />}</span>
                         </div>
                       ))}
                     </div>

@@ -10,7 +10,7 @@ const WIDTHS = [{ id: 'half', label: 'Half width' }, { id: 'full', label: 'Full 
 const MAX_ROWS = 2, MAX_VALUES = 3;
 
 /** Older widgets stored a single rowDim */
-const normalise = (w) => ({ ...EMPTY, ...w, rowDims: w.rowDims || (w.rowDim ? [w.rowDim] : []), filters: w.filters || {} });
+const normalise = (w) => ({ ...EMPTY, ...w, rowDims: w.rowDims || (w.rowDim ? [w.rowDim] : EMPTY.rowDims), filters: w.filters || {} });
 
 /**
  * Excel PivotTable-style builder.
