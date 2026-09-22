@@ -225,7 +225,7 @@ export default function OverviewDashboard() {
     ),
     productivity: () => (
       <Card title="BO Productivity & Coverage" description="Coverage, visit → file, collection and customer spread per officer — click a row for the DSA-wise split">
-        <OfficerProductivityTable officers={officers} onRowClick={(o) => setOfficer(o)} pageSize={10} compact />
+        <OfficerProductivityTable officers={officers} pageSize={10} compact />
       </Card>
     ),
     activity: () => (

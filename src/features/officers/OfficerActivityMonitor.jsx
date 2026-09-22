@@ -83,8 +83,8 @@ export default function OfficerActivityMonitor() {
       </div>
 
       {level === 'branch' && (
-        <Card title="BO Productivity & Coverage" description="Are visits spread across all DSAs, do they bring files, is collection recovered, are customers treated equally? Click a row for the DSA-wise split.">
-          <OfficerProductivityTable officers={officers} onRowClick={(o) => setSelected(o)} compact />
+        <Card title="BO Productivity & Coverage" description="Are visits spread across all DSAs, do they bring files, is collection recovered, are customers treated equally?">
+          <OfficerProductivityTable officers={officers} compact />
         </Card>
       )}
 

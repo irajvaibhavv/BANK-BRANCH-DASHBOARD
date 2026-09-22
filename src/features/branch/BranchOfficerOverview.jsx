@@ -16,7 +16,7 @@ const TREND_VIEWS = [{ id: 'volume', label: 'Disbursement & files' }, { id: 'qua
  * Branch Head's view of their own branch: what the BOs and DSAs are doing overall,
  * monthly trends, who is high / medium / low, commission, and BO productivity.
  */
-export default function BranchOfficerOverview({ onOpenOfficer }) {
+export default function BranchOfficerOverview() {
   const { officers, dsas, loanFiles, branches, monthly, scopeLabel } = useScope();
   const { scale, periodLabel } = useDateRange();
   const [trendView, setTrendView] = useState('volume');
@@ -93,7 +93,7 @@ export default function BranchOfficerOverview({ onOpenOfficer }) {
               <div className="label" style={{ marginBottom: 8, display: 'flex', alignItems: 'center', gap: 6 }}><FiAlertTriangle size={12} style={{ color: 'var(--danger)' }} /> Needs attention ({flagged.length})</div>
               {flagged.length === 0 && <p className="muted">No red flags this month.</p>}
               {flagged.slice(0, 4).map(({ o, p }) => (
-                <div className="list-row" key={o.id} style={{ padding: '8px 0', cursor: 'pointer' }} onClick={() => onOpenOfficer?.(o)}>
+                <div className="list-row" key={o.id} style={{ padding: '8px 0' }}>
                   <Avatar name={o.name} size={26} />
                   <div className="flex-1">
                     <div style={{ fontSize: 12, fontWeight: 600 }}>{o.name} <Badge variant="neutral" style={{ marginLeft: 4 }}>{p.score}</Badge></div>
@@ -106,8 +106,8 @@ export default function BranchOfficerOverview({ onOpenOfficer }) {
         </Card>
       </div>
 
-      <Card animate={false} title="BO Productivity & Coverage" description="Judged on how visits are spread across DSAs, whether they bring files, collection recovered and customer spread — not incentive alone. Click a row for the DSA-wise breakdown.">
-        <OfficerProductivityTable officers={officers} onRowClick={(r) => onOpenOfficer?.(r)} compact />
+      <Card animate={false} title="BO Productivity & Coverage" description="Judged on how visits are spread across DSAs, whether they bring files, collection recovered and customer spread — not incentive alone.">
+        <OfficerProductivityTable officers={officers} compact />
         <p className="muted mt-4" style={{ fontSize: 12 }}>
           <b>Coverage</b> = DSAs visited ÷ DSAs assigned. <b>Top DSA share</b> above 45% with the visit target met is flagged as favouring.
           <b> Visit → File</b> = visits that produced a file. <b>Collection</b> = amount recovered ÷ due. <b>Customer spread</b> = unique customers ÷ customer visits.

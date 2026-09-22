@@ -66,7 +66,7 @@ export default function DrillDownView() {
     <>
       <Breadcrumb />
 
-      {isOfficerLevel ? <BranchOfficerOverview onOpenOfficer={setOfficer} /> : (
+      {isOfficerLevel ? <BranchOfficerOverview /> : (
       <div className="grid grid-4">
         <KPICard index={0} accent="purple" label="Disbursement" value={formatCurrency(scale(agg.monthlyDisbursement))} helper={`${scopeLabel} · ${periodLabel}`} />
         <KPICard index={1} accent="amber" label="Target Achievement" value={`${agg.targetPct}%`} helper={`Target ${formatCurrency(scale(agg.monthlyTarget))}`} />
