@@ -17,13 +17,14 @@ const ACTIONS = {
   '/reports': { label: 'New Report', toast: 'Use the builder below' },
   '/alerts': { label: 'New Rule', toast: 'Open Alert Settings to add thresholds' },
   '/settings': { label: 'Add User', toast: 'Use the Add User button below' },
+  '/officers/': { label: 'Set Target', toast: 'Officer target setup (prototype)' },
 };
 
 export default function PageHeader() {
   const location = useLocation();
   const navigate = useNavigate();
   const toast = useToast();
-  const title = NAV.find((n) => location.pathname.startsWith(n.to))?.label || (location.pathname.startsWith('/settings') ? 'Settings' : 'Dashboard');
+  const title = NAV.find((n) => location.pathname.startsWith(n.to))?.label || (location.pathname.startsWith('/settings') ? 'Settings' : location.pathname.startsWith('/officers/') ? 'Officer Profile' : 'Dashboard');
   const action = ACTIONS[Object.keys(ACTIONS).find((k) => location.pathname.startsWith(k))] || ACTIONS['/overview'];
   return (
     <div className="page-header">

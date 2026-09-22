@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import { FiX, FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
 import { Avatar, Badge, Button } from '@/shared/ui';
 import { ProgressBar, Sparkline } from '@/shared/charts';
@@ -7,7 +8,6 @@ import { relativeTime } from '@/shared/utils/formatNumber';
 import { DATA } from '@/scope/scopeHelpers';
 import slabs from '@/data/incentiveSlabs.json';
 import { SLAB_COLORS } from '@/shared/utils/colors';
-import { useToast } from '@/shared/context/ToastContext';
 import { officerProductivity, TIER_VARIANT, TIER_COLOR } from '@/features/officers/officerProductivity';
 import { FlagBadges, VisitBar } from '@/features/officers/OfficerProductivityTable';
 
@@ -15,7 +15,7 @@ const STATUS_VARIANT = { Active: 'success', Idle: 'warning', Inactive: 'danger' 
 
 /** Slide-in side panel with an officer's profile, metrics, visits, DSAs and incentive progress */
 export default function OfficerDetailPanel({ officer, onClose }) {
-  const toast = useToast();
+  const navigate = useNavigate();
   const dsas = officer ? DATA.dsas.filter((d) => d.officerId === officer.id) : [];
   const nextSlab = officer ? slabs.slice().reverse().find((s) => s.minPct > officer.targetPct) : null;
   const prod = officer ? officerProductivity(officer) : null;
@@ -122,7 +122,7 @@ export default function OfficerDetailPanel({ officer, onClose }) {
             </div>
 
             <div className="side-panel-foot">
-              <Button className="btn-block" onClick={() => toast('Full profile view (prototype)', 'info')}>View Full Profile</Button>
+              <Button className="btn-block" onClick={() => { onClose?.(); navigate(`/officers/${officer.id}`); }}>View Full Profile</Button>
             </div>
           </motion.aside>
         </>

@@ -17,6 +17,7 @@ const OfficerActivityMonitor = lazy(() => import('@/features/officers/OfficerAct
 const IncentiveDashboard = lazy(() => import('@/features/incentives/IncentiveDashboard'));
 const ReportsScreen = lazy(() => import('@/features/reports/ReportsScreen'));
 const AlertsScreen = lazy(() => import('@/features/alerts/AlertsScreen'));
+const OfficerProfile = lazy(() => import('@/features/officers/OfficerProfile'));
 const SettingsProfile = lazy(() => import('@/features/settings/SettingsProfile'));
 const DashboardSetup = lazy(() => import('@/features/setup/DashboardSetup'));
 
@@ -48,6 +49,7 @@ export default function App() {
                     <Route path="/incentives" element={<IncentiveDashboard />} />
                     <Route path="/reports" element={<ReportsScreen />} />
                     <Route path="/alerts" element={<AlertsScreen />} />
+                    <Route path="/officers/:id" element={<OfficerProfile />} />
                     <Route path="/settings" element={<SettingsProfile />} />
                   </Route>
                   <Route path="*" element={<LandingRedirect />} />
